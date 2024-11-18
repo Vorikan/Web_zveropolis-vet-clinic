@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запис на прийом - Ветеринарна клініка "Звірополіс"</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Логотип клініки">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="services.html">Послуги</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="appointment.html" class="active">Запис на прийом</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="reviews.html">Відгуки</a></li>
+                    <li><a href="subscribe.html">Підписка на новини</a></li>
+                    <li><a href="appointment_en.html">English</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <p>Телефон: <a href="tel:+380952533322">+38 (095) 253 33 22</a></p>
+                <p>Електронна пошта: <a href="mailto:zveropolis@gmail.com">zveropolis@gmail.com</a></p>
+                <p>Години роботи: 8:00 - 22:00, без вихідних</p>
+                <p>Адреса: <a href="https://www.google.com/maps/search/?api=1&query=вул.+Гарматна,+38Б,+Київ"
+                        target="_blank">вул. Гарматна, 38Б, Київ</a></p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="appointment">
+            <h1>Запис на прийом</h1>
+            <form action="#">
+                <label for="name">Ваше ім'я</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone">Контактний номер</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="pet">Тип тварини</label>
+                <select id="pet" name="pet" required>
+                    <option value="" disabled selected>Оберіть тип тварини</option>
+                    <option value="dog">Собака</option>
+                    <option value="cat">Кіт</option>
+                    <option value="other">Інша</option>
+                </select>
+                <label for="date">Дата прийому</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Час прийому</label>
+                <input type="time" id="time" name="time" required>
+                <button type="submit">Відправити</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© 2024 Ветеринарна клініка. Всі права захищено.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

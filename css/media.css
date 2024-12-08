@@ -1,0 +1,47 @@
+/* Медіазапити для адаптивності */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .subscribe input {
+        width: 90%;
+    }
+
+    .subscribe {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 0.5rem;
+    }
+
+    header nav ul {
+        gap: 15px;
+    }
+
+    .contact-info {
+        font-size: 12px;
+    }
+
+    .subscribe input {
+        width: 100%;
+    }
+}

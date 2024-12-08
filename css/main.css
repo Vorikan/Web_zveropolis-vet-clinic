@@ -1,0 +1,201 @@
+/* Загальні стилі */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #FFE7D0;
+    color: #421010;
+    font-size: 16px;
+    /* Default font size */
+}
+
+header {
+    background-color: #A52A2A;
+    padding: 1rem;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFE7D0;
+    font-weight: bold;
+}
+
+/* Основні стилі для main */
+main {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 160px);
+    margin-top: 1%;
+}
+
+/* Стилі для підписки */
+.subscribe {
+    padding: 2rem;
+    text-align: center;
+}
+
+.subscribe h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.subscribe p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.subscribe form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.subscribe input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    max-width: 400px;
+    border: 2px solid #A52A2A;
+    border-radius: 5px;
+}
+
+.subscribe button {
+    background-color: #A52A2A;
+    color: #FFE7D0;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background-color: #421010;
+}
+
+.subscribe button:focus {
+    outline: 2px solid #FFD700;
+    /* Gold outline for accessibility */
+}
+
+/* Основні стилі для футера */
+footer {
+    background-color: #A52A2A;
+    color: #FFE7D0;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+}
+
+/* Стилі для карт */
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Стилі для галереї */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* Якщо не вміщуються, фото йдуть на наступний рядок */
+    justify-content: center;
+    /* Центруємо всі елементи по горизонталі */
+    gap: 1rem;
+    /* Відстань між фото */
+    margin-top: 2rem;
+}
+
+.gallery h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.gallery-item {
+    max-width: 250px;
+    /* Ширина для кожного фото */
+    margin-bottom: 1rem;
+    /* Відступ знизу для елементів */
+}
+
+.gallery img {
+    width: 100%;
+    /* Робимо зображення адаптивними */
+    height: auto;
+    border: 2px solid #A52A2A;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Контактна інформація */
+.contact-info {
+    text-align: right;
+    font-size: 14px;
+    color: #FFE7D0;
+}
+
+.contact-info a {
+    color: #FFE7D0;
+    text-decoration: none;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Стилі для валідації форм */
+input:invalid {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+textarea:invalid {
+    border: 2px solid red;
+}
+
+textarea:valid {
+    border: 2px solid green;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

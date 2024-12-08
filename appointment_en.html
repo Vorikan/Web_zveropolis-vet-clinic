@@ -40,11 +40,15 @@
     <main>
         <section class="appointment">
             <h1>Make an Appointment</h1>
-            <form action="#">
+            <form action="#" method="post">
                 <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" pattern="[A-Za-zА-Яа-яЄєІіЇїҐґ' ]+" required
+                    placeholder="Enter your name">
+
                 <label for="phone">Contact Number</label>
-                <input type="tel" id="phone" name="phone" required>
+                <input type="tel" id="phone" name="phone" required pattern="[\+]*[0-9]{10,15}"
+                    placeholder="Enter your phone number">
+
                 <label for="pet">Pet Type</label>
                 <select id="pet" name="pet" required>
                     <option value="" disabled selected>Select pet type</option>
@@ -52,10 +56,13 @@
                     <option value="cat">Cat</option>
                     <option value="other">Other</option>
                 </select>
+
                 <label for="date">Appointment Date</label>
                 <input type="date" id="date" name="date" required>
+
                 <label for="time">Appointment Time</label>
                 <input type="time" id="time" name="time" required>
+
                 <button type="submit">Submit</button>
             </form>
         </section>

@@ -40,11 +40,15 @@
     <main>
         <section class="appointment">
             <h1>Запис на прийом</h1>
-            <form action="#">
+            <form action="#" method="post">
                 <label for="name">Ваше ім'я</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" pattern="[A-Za-zА-Яа-яЄєІіЇїҐґ' ]+" required
+                    placeholder="Введіть ваше ім'я">
+
                 <label for="phone">Контактний номер</label>
-                <input type="tel" id="phone" name="phone" required>
+                <input type="tel" id="phone" name="phone" required pattern="[\+]*[0-9]{10,15}"
+                    placeholder="Введіть ваш номер телефону">
+
                 <label for="pet">Тип тварини</label>
                 <select id="pet" name="pet" required>
                     <option value="" disabled selected>Оберіть тип тварини</option>
@@ -52,10 +56,13 @@
                     <option value="cat">Кіт</option>
                     <option value="other">Інша</option>
                 </select>
+
                 <label for="date">Дата прийому</label>
                 <input type="date" id="date" name="date" required>
+
                 <label for="time">Час прийому</label>
                 <input type="time" id="time" name="time" required>
+
                 <button type="submit">Відправити</button>
             </form>
         </section>
